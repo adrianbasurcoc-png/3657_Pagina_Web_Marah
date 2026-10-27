@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marah: venta de kéfir de leche artesanal. Consulta sabores, presentaciones, precios y stock.">
+  <title>Marah | Kéfir de leche artesanal</title>
+  <!-- ejecutar "npm run build" para crear dist/output.css -->
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-700 antialiased">
+
+  <!-- ENCABEZADO: enlaces a las secciones de la página -->
+  <header class="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:justify-between">
+      <a href="#inicio" class="flex items-center gap-2 text-xl font-extrabold text-brand-700">
+        <img src="img/logo-Marah.png" alt="Marah" class="h-9 w-9 object-contain">
+        <span><span class="text-slate-900">Ma</span>rah</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium text-slate-600">
+          <li><a class="transition hover:text-brand-600" href="#inicio">Inicio</a></li>
+          <li><a class="transition hover:text-brand-600" href="#catalogo">Catálogo</a></li>
+          <li><a class="transition hover:text-brand-600" href="#buscador">Buscador</a></li>
+          <li><a class="transition hover:text-brand-600" href="#nosotros">Nosotros</a></li>
+          <li><a class="transition hover:text-brand-600" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO: propuesta de valor y llamadas a la acción -->
+    <section id="inicio" aria-labelledby="titulo-hero" class="bg-gradient-to-br from-brand-900 via-brand-700 to-brand-500 text-white">
+      <div class="mx-auto grid max-w-6xl items-center gap-8 px-4 py-16 md:grid-cols-2 md:py-24">
+        <div>
+          <p class="mb-3 inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide">
+            <span class="h-2 w-2 animate-pulse rounded-full bg-emerald-300"></span> Elaboración artesanal
+          </p>
+          <h1 id="titulo-hero" class="text-4xl font-extrabold leading-tight md:text-5xl">Kéfir de leche fresco, hecho con cuidado para tu mesa</h1>
+          <p class="mt-4 max-w-xl text-brand-100">Conoce las presentaciones, sabores y precios del kéfir de Marah y consulta la disponibilidad antes de hacer tu pedido.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#buscador" class="btn bg-white text-brand-700 hover:bg-brand-50">Buscar kéfir</a>
+            <a href="#catalogo" class="btn-outline">Ver productos</a>
+          </div>
+        </div>
+        <div class="hidden justify-center md:flex">
+          <div class="flex h-64 w-64 rotate-3 items-center justify-center rounded-3xl bg-white p-6 shadow-2xl ring-1 ring-white/30 transition hover:rotate-0">
+            <img src="img/logo-Marah.png" alt="Logo de Marah" class="h-full w-full object-contain">
+          </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO: categorías y productos destacados -->
+    <section id="catalogo" aria-labelledby="titulo-catalogo" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 id="titulo-catalogo" class="text-2xl font-bold text-slate-900 md:text-3xl">Productos destacados</h2>
+      <p class="mt-2 text-slate-500">Una muestra de nuestras presentaciones. Datos de ejemplo para el mockup.</p>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="img/kefir-1litro.jpeg" alt="Kéfir natural de 500 ml de Marah" class="h-36 w-full bg-brand-50 object-contain p-2">
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-brand-600">Bebidas</p>
+            <h3 class="mt-1 font-semibold text-slate-900">Kéfir natural 500 ml</h3>
+            <p class="mt-2 text-lg font-bold text-slate-900">S/. 12.00</p>
+            <span class="mt-3 inline-block rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Con stock</span>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="img/kefir-1litro.jpeg" alt="Kéfir natural de 500 ml de Marah" class="h-36 w-full bg-brand-50 object-contain p-2">
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-brand-600">Bebidas</p>
+            <h3 class="mt-1 font-semibold text-slate-900">Kéfir natural 1 litro</h3>
+            <p class="mt-2 text-lg font-bold text-slate-900">S/. 20.00</p>
+            <span class="mt-3 inline-block rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Con stock</span>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="img/kefir-1litro.jpeg" alt="Kéfir natural de 500 ml de Marah" class="h-36 w-full bg-brand-50 object-contain p-2">
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-brand-600">Sabores</p>
+            <h3 class="mt-1 font-semibold text-slate-900">Kéfir de fresa 500 ml</h3>
+            <p class="mt-2 text-lg font-bold text-slate-900">S/. 14.00</p>
+            <span class="mt-3 inline-block rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-700">Con stock</span>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+          <img src="img/kefir-1litro.jpeg" alt="Kéfir natural de 500 ml de Marah" class="h-36 w-full bg-brand-50 object-contain p-2">
+          <div class="p-5">
+            <p class="text-xs font-semibold uppercase text-brand-600">Cultivo</p>
+            <h3 class="mt-1 font-semibold text-slate-900">Granos de kéfir (50 g)</h3>
+            <p class="mt-2 text-lg font-bold text-slate-900">S/. 35.00</p>
+            <span class="mt-3 inline-block rounded-full bg-rose-100 px-2.5 py-0.5 text-xs font-semibold text-rose-700">Sin stock</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUSCADOR: formulario con distintos controles  -->
+    <section id="buscador" aria-labelledby="titulo-buscador" class="bg-white py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 id="titulo-buscador" class="text-2xl font-bold text-slate-900 md:text-3xl">Buscador de kéfir</h2>
+        <p class="mt-2 text-slate-500">Filtra por nombre, categoría, rango de precio y disponibilidad.</p>
+
+        <div class="mt-8 grid gap-8 lg:grid-cols-3">
+          <!-- Formulario de filtros -->
+          <form id="formBusqueda" class="space-y-4 rounded-xl bg-slate-50 p-6 shadow ring-1 ring-slate-200 lg:col-span-1">
+            <div>
+              <label for="nombre" class="mb-1 block text-sm font-medium">Nombre del producto</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej.: natural" class="campo">
+            </div>
+            <div>
+              <label for="categoria" class="mb-1 block text-sm font-medium">Categoría</label>
+              <select id="categoria" name="categoria" class="campo">
+                <option value="">-- Todas las categorías --</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Sabores">Sabores</option>
+                <option value="Cultivo">Cultivo (granos)</option>
+              </select>
+            </div>
+            <label class="flex cursor-pointer items-center gap-2 text-sm">
+              <input type="checkbox" name="solo_stock" class="h-4 w-4 accent-brand-600">
+              Mostrar solo productos con stock
+            </label>
+            <fieldset>
+              <legend class="mb-1 text-sm font-medium">Rango de precio</legend>
+              <div class="flex flex-col gap-1 text-sm">
+                <label class="flex items-center gap-2"><input type="radio" name="rango" value="bajo" class="accent-brand-600"> Hasta S/. 15</label>
+                <label class="flex items-center gap-2"><input type="radio" name="rango" value="medio" class="accent-brand-600"> S/. 15 - 30</label>
+                <label class="flex items-center gap-2"><input type="radio" name="rango" value="alto" class="accent-brand-600"> Más de S/. 30</label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn-primary w-full">Buscar</button>
+          </form>
+
+          <!-- Tabla de resultados -->
+          <div class="overflow-x-auto rounded-xl shadow-sm ring-1 ring-slate-200 lg:col-span-2">
+            <table class="min-w-full divide-y divide-slate-200 text-sm">
+              <caption class="sr-only">Resultados de ejemplo del buscador</caption>
+              <thead class="bg-brand-600 text-left text-xs uppercase tracking-wide text-white">
+                <tr>
+                  <th scope="col" class="p-3 font-semibold">Producto</th>
+                  <th scope="col" class="p-3 font-semibold">Categoría</th>
+                  <th scope="col" class="p-3 font-semibold">Precio</th>
+                  <th scope="col" class="p-3 font-semibold">Stock</th>
+                </tr>
+              </thead>
+              <tbody id="tabla" class="divide-y divide-slate-200 bg-white">
+                <tr class="transition hover:bg-brand-50"><td class="p-3 font-medium text-slate-900">Kéfir natural 500 ml</td><td class="p-3">Bebidas</td><td class="p-3">S/. 12.00</td><td class="p-3">40</td></tr>
+                <tr class="transition hover:bg-brand-50"><td class="p-3 font-medium text-slate-900">Kéfir natural 1 litro</td><td class="p-3">Bebidas</td><td class="p-3">S/. 20.00</td><td class="p-3">25</td></tr>
+                <tr class="transition hover:bg-brand-50"><td class="p-3 font-medium text-slate-900">Kéfir de fresa 500 ml</td><td class="p-3">Sabores</td><td class="p-3">S/. 14.00</td><td class="p-3">18</td></tr>
+                <tr class="transition hover:bg-brand-50"><td class="p-3 font-medium text-slate-900">Granos de kéfir (50 g)</td><td class="p-3">Cultivo</td><td class="p-3">S/. 35.00</td><td class="p-3">0</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS: ventajas del servicio -->
+    <section id="nosotros" aria-labelledby="titulo-nosotros" class="mx-auto max-w-6xl px-4 py-16">
+      <h2 id="titulo-nosotros" class="text-2xl font-bold text-slate-900 md:text-3xl">¿Por qué Marah?</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <p class="text-3xl" aria-hidden="true">🌿</p>
+          <h3 class="mt-3 font-semibold text-slate-900">Fermentación natural</h3>
+          <p class="mt-2 text-sm text-slate-500">Kéfir de leche elaborado de forma artesanal en pequeños lotes.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <p class="text-3xl" aria-hidden="true">💰</p>
+          <h3 class="mt-3 font-semibold text-slate-900">Precios claros</h3>
+          <p class="mt-2 text-sm text-slate-500">Precios en soles y disponibilidad visibles antes de pedir.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+          <p class="text-3xl" aria-hidden="true">📱</p>
+          <h3 class="mt-3 font-semibold text-slate-900">Pide desde tu celular</h3>
+          <p class="mt-2 text-sm text-slate-500">Sitio adaptable a celulares, tablets y computadoras.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO: formulario de consultas -->
+    <section id="contacto" aria-labelledby="titulo-contacto" class="bg-brand-50 py-16">
+      <div class="mx-auto max-w-2xl px-4">
+        <h2 id="titulo-contacto" class="text-center text-2xl font-bold text-slate-900 md:text-3xl">Contáctanos</h2>
+        <form class="mt-8 space-y-4 rounded-xl bg-white p-6 shadow ring-1 ring-slate-200">
+          <div>
+            <label for="c-nombre" class="mb-1 block text-sm font-medium">Nombre</label>
+            <input type="text" id="c-nombre" name="nombre" required minlength="2" class="campo">
+          </div>
+          <div>
+            <label for="c-correo" class="mb-1 block text-sm font-medium">Correo electrónico</label>
+            <input type="email" id="c-correo" name="correo" required class="campo">
+          </div>
+          <div>
+            <label for="c-mensaje" class="mb-1 block text-sm font-medium">Mensaje</label>
+            <textarea id="c-mensaje" name="mensaje" rows="4" required class="campo"></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full sm:w-auto">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA: datos de contacto y derechos -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-6 text-sm md:flex-row">
+      <p>&copy; 2026 Marah.  - Adrian Basurco.</p>
+      <address class="not-italic">Lima, Perú &middot; contacto@marah.com</address>
+    </div>
+  </footer>
+
+</body>
+</html>
